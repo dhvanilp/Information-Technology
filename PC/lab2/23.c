@@ -22,6 +22,6 @@ void main()
             }
         }
     }
-t2=omp_get_wtime();
-printf("Time taken is %f",t2-t1);
+    t2=omp_get_wtime();
+    printf("Time taken is %f",t2-t1);
 }

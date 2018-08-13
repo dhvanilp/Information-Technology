@@ -3,7 +3,7 @@
 void main()
 {
     int x=0;
-    #pragma omp parallel num_threads(6) reduction(+:x)
+    #pragma omp parallel num_threads(4) reduction(+:x)
     {
         int id=omp_get_thread_num();
         int threads=omp_get_num_threads();
