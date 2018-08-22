@@ -1,0 +1,40 @@
+input[type=text]{
+	background-color: #F8C471;
+	border: 1.5px solid #800080;
+	float: right;
+	width: 150px;
+	margin-right: 10px;
+	margin-left: 10px 	 
+}
+.boxed{
+	width: 140px;
+	border: 2px solid #800080;
+	text-align: center;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #F39C12; 
+	padding: 5px;
+	margin-left: 15px;
+	position: relative;
+	top:17px;
+
+}
+.someform{
+	float: left;
+	border: 2px solid #800080; 
+	padding: 25px
+}
+.iform{
+	float: right;
+	margin-right:5px
+}
+.button1{ 
+	padding-top: 10px; 
+	padding-left: 80px;
+	float: left;
+}
+.button2{ 
+	padding-top: 10px; 
+	padding-left: 80px;
+	float: left;
+}
