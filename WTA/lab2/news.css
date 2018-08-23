@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+}
+
+.headline-image {
+    margin: 1em;
+    height: 50vh;
+    align-self: center;
+}
+
+.side-paragraph {
+    display: flex;
+}
+
+
+img, p, h1 {
+    margin: 1em;
+}
