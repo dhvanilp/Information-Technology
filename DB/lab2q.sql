@@ -17,5 +17,3 @@ SELECT COUNT(EMPLOYEE.Fname) from EMPLOYEE INNER JOIN DEPARTMENT on EMPLOYEE.Dno
 SELECT Pname,Pno,COUNT(Essn) AS number_of_employees from WORKS_ON,PROJECT WHERE PROJECT.Pnumber=WORKS_ON.Pno group by Pname,Pno;
 
 -- 5
-
-
