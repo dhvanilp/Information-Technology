@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Response</title>
+</head>
+
+<body>
+    <div>
+        First Name:<br> <input type="text" name="FName" id="FNam"><p id="alertfName"></p>
+        <br>
+        Last Name:<br> <input type="text" name="LName" id="LNam"><p id="alertlName"></p>
+        <br>
+        Emai Id:<br> <input type="text" name="Email" id="Email"><p id="alertEmail"></p>
+        <br>
+        City:<br> <input type="text" name="City" id="Cit"><p id="alertCity"></p>
+        <br>
+        <br>
+        Gender:
+        <select id="Gende">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <br>
+        Comments:<br> <textarea rows="5" cols="33" name="Comments" id="Comment"></textarea>
+    </div>
+    
+    <br>
+    <button type="button" id="viewBtn" onclick="viewBtn()">Viewer</button>
+    <p id="displayText"></p>
+</body>
+<script>
+    function viewBtn(){
+        var inserted=document.getElementById("displayText");
+        inserted.innerHTML=""
+        var nameF=document.getElementById("FNam").value;
+        var nameL=document.getElementById("LNam").value;
+        var email=document.getElementById("Email").value;
+        var cityF=document.getElementById("Cit").value;
+        var genderF=document.getElementById("Gende").value;
+        var comF=document.getElementById("Comment").value;
+        var flag=1;
+        if(nameF==""){
+            document.getElementById("alertfName").innerHTML='cannot be null';
+            flag=0;
+        }else if(nameF.length>20){
+            document.getElementById("alertfName").innerHTML='cannot be more than 20 chararctes';
+            flag=0;
+        }
+        if(nameL==""){
+            document.getElementById("alertlName").innerHTML='cannot be null';
+            flag=0;
+        }else if(nameL.length>20){
+            document.getElementById("alertfName").innerHTML='cannot be more than 20 chararctes';
+            flag=0;
+        }
+        if(cityF==""){
+            document.getElementById("alertCity").innerHTML='Please enter a valid City,cannot be null';
+            flag=0;
+        }
+        if(flag==0){
+            inserted.innerHTML="";
+            flag=0
+        }
+        if(ValidateEmail(email)==false){
+            flag=0;
+        }
+        if(comF==""){
+            document.getElementById("Comment").value='NIL';
+            comF='NIL'
+        }
+        if(flag==true){
+            inserted.innerHTML="<strong>Your responsce</strong>:<br>"+
+            "<strong>First Name</strong>:"+nameF+"<br>"+
+            "<strong>Last Name</strong>:"+nameL+"<br>"+
+            "<strong>City</strong>:"+cityF+"<br>"+
+            "<strong>Email</strong>:"+email+"<br>"+
+            "<strong>Gender</strong>:"+genderF+"<br>"+
+            "<strong>Comments</strong>:"+comF;
+        }
+    }
+    function ValidateEmail(inputText){
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(inputText.match(mailformat)){
+            return true;
+        }
+        else{
+            document.getElementById("alertEmail").innerHTML="You have entered an invalid email address!";
+            return false;
+        }
+    }
+</script> 
+</html>
