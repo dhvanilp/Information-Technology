@@ -4,21 +4,31 @@
 	<title>Response</title>
 </head>
 <body>
-    <h1>Welcomw</h1>
+    <h1>Welcome</h1>
     <br>
-    <img src='./images/1.jpeg'>
+    <img src='./images/1.jpeg' id="viewImg">
     <br>
     <button type="button" onclick="start_slide()">View slide show</button>
     <button type="button" onclick="next()">Next</button>
     <button type="button" onclick="prev()">Previous</button>
 </body>
 <script>
-    var arr=[]
+    var arr=['./images/1.jpeg','./images/2.jpg','./images/3.png'];
+    var i=0;
     function start_slide(){
 
     }
     function next(){
+        i=i+1;
+        i=i%(arr.length);
+        document.getElementById("viewImg").src=arr[i];
 
+    }
+    function prev(){
+        i=i-1;
+        if(i<0)
+            i=arr.length;
+        document.getElementById("viewImg").src=arr[i];
     }
 </script>
 </html>
