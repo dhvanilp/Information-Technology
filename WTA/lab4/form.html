@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Response</title>
+</head>
+
+
+
+<body>
+    <div>
+        Name:<br> <input type="text" name="Name" id="Nam">
+        <br>
+        City:<br> <input type="text" name="City" id="Cit">
+        <br>
+        <br>
+        Gender:
+        <select id="Gende">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br>
+        <br>
+        Comments:<br> <textarea rows="5" cols="33" name="Comments" id="Comment"></textarea>
+    </div>
+    
+    <br>
+    <button type="button" id="viewBtn" onclick="viewBtn()">Viewer</button>
+    <p id="displayText"></p>
+</body>
+<script>
+    function viewBtn(){
+        var inserted=document.getElementById("displayText");
+        var nameF=document.getElementById("Nam").value;
+        var cityF=document.getElementById("Cit").value;
+        var genderF=document.getElementById("Gende").value;
+        var comF=document.getElementById("Comment").value;
+    
+        inserted.innerHTML="<strong>Your responsce</strong>:<br>"+
+        "<strong>Name</strong>:"+nameF+"<br>"+
+        "<strong>City</strong>:"+cityF+"<br>"+
+        "<strong>Gender</strong>:"+genderF+"<br>"+
+        "<strong>Comments</strong>:"+comF;
+    }
+</script> 
+</html>
