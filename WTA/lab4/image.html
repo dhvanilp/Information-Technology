@@ -4,30 +4,48 @@
 	<title>Response</title>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <br>
-    <img src='./images/1.jpeg' id="viewImg">
-    <br>
-    <button type="button" onclick="start_slide()">View slide show</button>
-    <button type="button" onclick="next()">Next</button>
-    <button type="button" onclick="prev()">Previous</button>
+    <h1>NITK</h1>
+    <p>
+        National Institute of Technology Karnataka (NITK), 
+        formerly known as Karnataka Regional Engineering College (KREC), 
+        also known as NIT Surathkal, is a public engineering university at Surathkal, Mangalore. 
+        It was founded in 1960 as KREC while today, it is one of the 31 
+        National Institutes of Technology in India and is recognised as an Institute of National Importance 
+        by the Government of India. It has a suburban campus, in close proximity to the Arabian Sea. 
+        National Highway 66 runs through the campus and serves as the major mode of access. 
+    </p>
+    <button type="button" onclick="toggle_visibility()">Show Slideshow</button>
+    <div id="tohide">
+        <button type="button" onclick="next()">Next</button>
+        <button type="button" onclick="prev()">Previous</button>
+        <br>
+        <br>
+        <img src='./images/1.jpeg' id="viewImg">
+        <br>
+    </div>  
+    
+    
 </body>
 <script>
+    document.getElementById('tohide').style.display='none';
     var arr=['./images/1.jpeg','./images/2.jpg','./images/3.png'];
     var i=0;
-    function start_slide(){
-
-    }
+    function toggle_visibility() {
+       var e = document.getElementById('tohide');
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+   }
     function next(){
         i=i+1;
         i=i%(arr.length);
         document.getElementById("viewImg").src=arr[i];
-
     }
     function prev(){
         i=i-1;
         if(i<0)
-            i=arr.length;
+            i=arr.length-1;
         document.getElementById("viewImg").src=arr[i];
     }
 </script>

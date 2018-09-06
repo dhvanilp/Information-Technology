@@ -12,7 +12,7 @@
         <br>
         <br>
         Gender:
-        <select id="Gende">
+        <select id="Gende" name="Gender">
             <option value="Male">Male</option>
             <option value="Female">Female</option>
         </select>
@@ -22,8 +22,9 @@
     </div>
     
     <br>
-    <button type="button" id="viewBtn" onclick="viewBtn()">Viewer</button>
-    <p id="displayText"></p>
+    <button type="button" id="viewBtn" onclick="viewBtn()">Viewer by id</button>
+    <button type="button" id="viewBtn" onclick="viewBtn2()">Viewer by name</button>
+    <p name="displayT" id="displayText"></p>
 </body>
 <script>
     function viewBtn(){
@@ -32,6 +33,19 @@
         var cityF=document.getElementById("Cit").value;
         var genderF=document.getElementById("Gende").value;
         var comF=document.getElementById("Comment").value;
+    
+        inserted.innerHTML="<strong>Your responsce</strong>:<br>"+
+        "<strong>Name</strong>:"+nameF+"<br>"+
+        "<strong>City</strong>:"+cityF+"<br>"+
+        "<strong>Gender</strong>:"+genderF+"<br>"+
+        "<strong>Comments</strong>:"+comF;
+    }
+    function viewBtn2(){
+        var inserted=document.getElementsByName("displayT")[0];
+        var nameF=document.getElementsByName("Name")[0].value;
+        var cityF=document.getElementsByName("City")[0].value;
+        var genderF=document.getElementsByName("Gender")[0].value;
+        var comF=document.getElementsByName("Comments")[0].value;
     
         inserted.innerHTML="<strong>Your responsce</strong>:<br>"+
         "<strong>Name</strong>:"+nameF+"<br>"+

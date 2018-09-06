@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Grocery</title>
+</head>
+<body>
+	<table>
+		<th width="80">Items</th>
+		<th width="80">Price /kg </th>
+		<th width="80">Quantity (in kgs)</th>
+		<tr>
+			<td>Item 1</td>
+			<td align="center">100</td>	
+			<td><input type="number" name="qty1" id="idQty1"></td>
+		</tr>
+		<tr>
+			<td>Item 2</td>
+			<td align="center">40</td>	
+			<td><input type="number" name="qty2" id="idQty2"></td>
+		</tr>
+		<tr>
+			<td>Item 3</td>
+			<td align="center">25</td>	
+			<td><input type="number" name="qty3" id="idQty3"></td>
+		</tr>
+	</table>
+	<button type="button" id="calc" onclick="Calculate()">Calculate</button>
+	<input type="text" name="tot" id="total" width="50">
+</body>
+<script>
+	function Calculate() {
+		var varQty1 = document.getElementById("idQty1").value;
+		var varQty2 = document.getElementById("idQty2").value;
+		var varQty3 = document.getElementById("idQty3").value;
+		var total = parseInt(varQty1)*100 + parseInt(varQty2)*40 + parseInt(varQty3)*25;
+		document.getElementById("total").value=total; 
+	}
+</script>
+</html>

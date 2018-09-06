@@ -48,7 +48,7 @@ def main():
             continue
         lineNo+=1
         expected=0    
-        if line[0]=="YES":
+        if line[0]=="Yes":
             expected=1
         temp=line[1:len(line)]
         temp.append(expected)
