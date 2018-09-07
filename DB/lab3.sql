@@ -65,6 +65,35 @@ CREATE TABLE IF NOT EXISTS ROOM(
     FOREIGN KEY(blockfloor,blockcode) references BLOCK(blockfloor,blockcode)
 );
 
+CREATE TABLE IF NOT EXISTS PROCEDURES(
+    code int(10) PRIMARY KEY,
+    name varchar(20),
+    cost int(7)
+);
+
+CREATE TABLE IF NOT EXISTS TRAINED_IN(
+    physician int(10),
+    treatment int(10),
+    certificationdate date,
+    certificationexpires date,
+    PRIMARY KEY(certificationdate,certificationexpires),
+    FOREIGN KEY(physician) references PHYSICIAN(employeeid),
+    FOREIGN KEY(treatment) references PROCEDURES(code)
+);
+
+CREATE TABLE IF NOT EXISTS UNDERGOES(
+    patient int(10),
+    procedures int(10),
+    date date,
+    physician int(10),
+    assistingnurse int(10),
+    FOREIGN KEY(patient) references PATIENT(ssn),
+    FOREIGN KEY(procedures) references PROCEDURES(code),
+    FOREIGN KEY(physician) references PHYSICIAN(employeeid),
+    FOREIGN KEY(assistingnurse) references NURSE(employeeid)
+);
+
+
 SELECT 'END REACHED' as '';
 
 INSERT INTO NURSE values(101,'Carla Espinosa','Head Nurse',true,111111110);
@@ -106,3 +135,5 @@ INSERT INTO BLOCK values(3,2);
 INSERT INTO ROOM values(101,'Single',1,1,false);
 INSERT INTO ROOM values(102,'Single',2,1,false);
 INSERT INTO ROOM values(212,'Single',3,2,false);
+
+INSERT INTO UNDERGOES values(100000001, 6,3215 ,'2008-05-02 00:00:00' , 3 , 101);
