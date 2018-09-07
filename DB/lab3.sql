@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS TRAINED_IN(
 CREATE TABLE IF NOT EXISTS UNDERGOES(
     patient int(10),
     procedures int(10),
-    date date,
+    date datetime,
     physician int(10),
     assistingnurse int(10),
     FOREIGN KEY(patient) references PATIENT(ssn),
@@ -143,9 +143,8 @@ INSERT INTO PROCEDURES values(3,'Folded Demiophtalmectomy',4500);
 INSERT INTO PROCEDURES values(4,'Complete Walletectomy',10000);
 INSERT INTO PROCEDURES values(5,'Obfuscated Dermogastrotomy',4899);
 
-
-INSERT INTO UNDERGOES values(100000001, 6,'2008-05-02 00:00:00' , 3 , 101);
-INSERT INTO UNDERGOES values(100000001, 7,'2008-05-10 00:00:00' , 7 , 101);
+INSERT INTO UNDERGOES values(100000001, 1,'2008-05-02 00:00:00' , 3 , 101);
+INSERT INTO UNDERGOES values(100000001, 3,'2008-05-10 00:00:00' , 7 , 101);
 INSERT INTO UNDERGOES values(100000004, 4,'2008-05-13 00:00:00' , 3 , 103);
 
 INSERT INTO TRAINED_IN values(3,1,'2008-01-01','2008-12-31');
