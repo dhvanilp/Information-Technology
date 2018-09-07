@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS ROOM(
 
 CREATE TABLE IF NOT EXISTS PROCEDURES(
     code int(10) PRIMARY KEY,
-    name varchar(20),
+    name varchar(50),
     cost int(7)
 );
 
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS TRAINED_IN(
     treatment int(10),
     certificationdate date,
     certificationexpires date,
-    PRIMARY KEY(certificationdate,certificationexpires),
+    PRIMARY KEY(physician,treatment),
     FOREIGN KEY(physician) references PHYSICIAN(employeeid),
     FOREIGN KEY(treatment) references PROCEDURES(code)
 );
@@ -136,4 +136,20 @@ INSERT INTO ROOM values(101,'Single',1,1,false);
 INSERT INTO ROOM values(102,'Single',2,1,false);
 INSERT INTO ROOM values(212,'Single',3,2,false);
 
-INSERT INTO UNDERGOES values(100000001, 6,3215 ,'2008-05-02 00:00:00' , 3 , 101);
+
+INSERT INTO PROCEDURES values(1,'Reverse Rhinopodoplasty',1500);
+INSERT INTO PROCEDURES values(2,'Obtuse Pyloric Recombobulation',3750);
+INSERT INTO PROCEDURES values(3,'Folded Demiophtalmectomy',4500);
+INSERT INTO PROCEDURES values(4,'Complete Walletectomy',10000);
+INSERT INTO PROCEDURES values(5,'Obfuscated Dermogastrotomy',4899);
+
+
+INSERT INTO UNDERGOES values(100000001, 6,'2008-05-02 00:00:00' , 3 , 101);
+INSERT INTO UNDERGOES values(100000001, 7,'2008-05-10 00:00:00' , 7 , 101);
+INSERT INTO UNDERGOES values(100000004, 4,'2008-05-13 00:00:00' , 3 , 103);
+
+INSERT INTO TRAINED_IN values(3,1,'2008-01-01','2008-12-31');
+INSERT INTO TRAINED_IN values(3,2,'2008-01-01','2008-12-31');
+INSERT INTO TRAINED_IN values(6,2,'2008-01-01','2008-12-31');
+INSERT INTO TRAINED_IN values(6,5,'2008-01-01','2007-12-31');
+INSERT INTO TRAINED_IN values(7,1,'2008-01-01','2008-12-31');
