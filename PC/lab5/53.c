@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include <sys/time.h>
 #include <stdlib.h>
-int ARR_SIZE=100000;
+int ARR_SIZE=1000000;
 int main(){
     struct timeval TimeValue_Start;
     struct timezone TimeZone_Start;
