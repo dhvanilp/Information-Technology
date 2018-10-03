@@ -10,12 +10,11 @@ int main(){
     }
     int key=0;
     printf("Enter the key to search:\n");
-    scanf("%d",&key);
+    scanf("%d\n",&key);
     
     for(int i=0;i<ARR_SIZE;i++){
         printf("%d ",a[i]);
     }
-    // printf("hello\n");
     int low=0;
     int high=ARR_SIZE-1;
     int mid=(low+high)/2;
