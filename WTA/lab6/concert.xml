@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="concert_r.xsl"?>   
+<booklet>
+    <concert>
+        <band_name>Bon Iver</band_name>
+        <venue>
+            <name>Rose Bowl</name>
+            <address>California</address>
+            <contact>+123 232 433</contact>
+        </venue>
+        <details>
+            <date>
+                <month>October</month>
+                <day>28</day>
+            </date>
+            <time>17:00</time>
+        </details>
+        <genre>Electronic</genre>
+        <performers>
+            <performer>
+                <artist_name>Justin Vernon</artist_name>
+                <artist_role>Lead Vocalist and Guitar</artist_role>
+            </performer>
+            <performer>
+                <artist_name>S Carey</artist_name>
+                <artist_role>Drummer</artist_role>
+            </performer>
+        </performers>
+        <tickets>
+            <ticket>
+                <price>150</price>
+                <category>Normal</category>
+                <discount>0</discount>
+            </ticket>
+            <ticket>
+                <price>250</price>
+                <category>Gold</category>
+                <discount>0</discount>
+            </ticket>
+            <ticket>
+                <price>400</price>
+                <category>Platinum</category>
+                <discount>0</discount>
+            </ticket>
+        </tickets>
+        <seller>
+            <seller_name>Ticket Master</seller_name>
+            <seller_phone>+12 3234 3434</seller_phone>
+            <seller_email>contact@ticketmaster.com</seller_email>
+            <seller_address>123, Avenue, FL</seller_address>
+        </seller>
+    </concert>
+
+    <concert>
+        <band_name>Of Monsters and Men</band_name>
+        <venue>
+            <name>Wembley</name>
+            <address>London</address>
+            <contact>+23 325 432</contact>
+        </venue>
+        <details>
+            <date>
+                <month>November</month>
+                <day>14</day>
+            </date>
+            <time>18:00</time>
+        </details>
+        <genre>Rock</genre>
+        <performers>
+            <performer>
+                <artist_name>John</artist_name>
+                <artist_role>Lead Vocalist</artist_role>
+            </performer>
+            <performer>
+                <artist_name>Jack</artist_name>
+                <artist_role>Lead Guitars</artist_role>
+            </performer>
+        </performers>
+        <tickets>
+            <ticket>
+                <price>250</price>
+                <category>All</category>
+                <discount>5</discount>
+            </ticket>
+        </tickets>
+        <seller>
+            <seller_name>BookShow</seller_name>
+            <seller_phone>+01 88 7663 23</seller_phone>
+            <seller_email>tickets@bookshow.com</seller_email>
+            <seller_address>123, Street, London</seller_address>
+        </seller>
+    </concert>
+
+    <concert>
+        <band_name>U2</band_name>
+        <venue>
+            <name>KK Ground</name>
+            <address>Mangalore</address>
+            <contact>+91 022 3232 3243</contact>
+        </venue>
+        <details>
+            <date>
+                <month>April</month>
+                <day>21</day>
+            </date>
+            <time>19:00</time>
+        </details>
+        <genre>Pop Rock</genre>
+        <performers>
+            <performer>
+                <artist_name>Bono</artist_name>
+                <artist_role>Lead Vocalist</artist_role>
+            </performer>
+            <performer>
+                <artist_name>Jack</artist_name>
+                <artist_role>Lead Guitars</artist_role>
+            </performer>
+        </performers>
+        <tickets>
+            <ticket>
+                <price>75</price>
+                <category>All</category>
+                <discount>0</discount>
+            </ticket>
+        </tickets>
+        <seller>
+            <seller_name>BookShow</seller_name>
+            <seller_phone>+01 88 7663 23</seller_phone>
+            <seller_email>tickets@bookshow.com</seller_email>
+            <seller_address>123, Street, London</seller_address>
+        </seller>
+    </concert>
+
+    <concert>
+        <band_name>Indian Ocean</band_name>
+        <venue>
+            <name>Salt Lake City</name>
+            <address>Mangalore</address>
+            <contact>+91 022 3232 3243</contact>
+        </venue>
+        <details>
+            <date>
+                <month>April</month>
+                <day>15</day>
+            </date>
+            <time>19:00</time>
+        </details>
+        <genre>Rock</genre>
+        <performers>
+            <performer>
+                <artist_name>John</artist_name>
+                <artist_role>Lead Vocalist</artist_role>
+            </performer>
+            <performer>
+                <artist_name>Jack</artist_name>
+                <artist_role>Lead Guitars</artist_role>
+            </performer>
+        </performers>
+        <tickets>
+            <ticket>
+                <price>80</price>
+                <category>All</category>
+                <discount>5</discount>
+            </ticket>
+        </tickets>
+        <seller>
+            <seller_name>BookShow</seller_name>
+            <seller_phone>+01 88 7663 23</seller_phone>
+            <seller_email>tickets@bookshow.com</seller_email>
+            <seller_address>123, Street, London</seller_address>
+        </seller>
+    </concert>
+</booklet>

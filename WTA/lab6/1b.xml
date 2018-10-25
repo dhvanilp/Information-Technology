@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1b.css"?>
+<concert_tickets>
+    <concert_ad>
+        <name>Coldplay</name>
+        <place>Palace ground</place>
+        <date>12-05-1990 8:30 AM</date>
+        <genre>pop</genre>
+        <perf_name>Ankit Singh</perf_name>
+        <ticket>
+            <price>1000</price>
+            <type>silver</type>
+            <discount>100</discount>
+        </ticket>
+        <sellerInfo>Ticket pvt lt</sellerInfo>
+    </concert_ad>
+    <concert_ad>
+        <name>Chainsmokers</name>
+        <place>Palace ground</place>
+        <date>13-07-1998 9:30 AM</date>
+        <genre>rock</genre>
+        <perf_name>Praveen kumar</perf_name>
+        <ticket>
+            <price>1000</price>
+            <type>gold</type>
+            <discount>100</discount>
+        </ticket>
+        <sellerInfo>Ticket pvt lt</sellerInfo>
+    </concert_ad>
+    <concert_ad>
+        <name>Pink Flyod</name>
+        <place>Mayo Hall</place>
+        <date>19-12-2000 8:20 AM</date>
+        <genre>classic</genre>
+        <perf_name>Nishant kumar</perf_name>
+        <ticket>
+            <price>1200</price>
+            <type>silver</type>
+            <discount>150</discount>
+        </ticket>
+        <sellerInfo>Ticket pvt lt</sellerInfo>
+    </concert_ad>
+    
+
+</concert_tickets> 

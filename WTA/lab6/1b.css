@@ -1,0 +1,59 @@
+concert_tickets::before {
+    display: block;
+    font-weight: bold;
+    content: "Tickets for concert";
+    margin:10px;
+    padding:5px;
+    color: rgb(102, 4, 4);
+}
+
+name{
+    display: inline;
+    content: "Name:";
+    color: rgb(17, 62, 151);
+    font:bold;
+}
+
+genre {
+    padding-top: 10px;
+    padding-left: 10px; 
+    color:blueviolet; 
+    display: block;
+    font-style: italic;
+}   
+perf_name{
+    display: inline;
+    color: rgba(214, 149, 29, 0.85);
+    margin-left: 40px;
+
+}
+date{
+    display: block;
+    content: "Date and time";
+    color: rgb(17, 62, 151);
+    font-weight: bold;  
+}
+
+place{
+    display: inline;
+    content: "Place information:";
+    color: rgb(17, 62, 151);
+    font: bold;
+    margin-left: 50px;
+}
+ticket{
+    display: block;
+    color: rgba(255, 166, 0, 0.809)
+}
+sellerInfo{
+    display: block;
+    font-weight: bold;  
+    color: black;
+    padding-bottom: 40px;
+}
+ discount::before{
+     content:",";
+ }
+ discount::after{
+     content:"/- off"
+ }

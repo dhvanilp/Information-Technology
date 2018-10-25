@@ -1,0 +1,50 @@
+booklet {
+    display: block;
+}
+
+concert {
+    margin: 1em;
+    padding: 1em;
+    display: block;
+}
+
+venue {
+    margin-left: 4em;
+}
+
+details {
+    display: block;
+}
+
+band_name, venue, details {
+    font-weight: bold;
+    color: rgba(0, 0, 192, 0.823);
+}
+
+genre, seller {
+    display: block;
+    margin-left: 2em;
+}
+
+genre {
+    color: rgba(128, 0, 0, 0.878);
+    font-style: italic;
+}
+
+tickets, performers {
+    display: block;
+    margin-left: 4em;
+    color: orange;
+}
+
+performer {
+    margin-right: 3em;
+}
+
+ticket {
+    display: block;
+}
+
+seller {
+    font-weight: bold;
+}
