@@ -22,6 +22,6 @@
 -- -- question 3
 drop view X;
 CREATE VIEW X AS SELECT name, grade from Highschooler
-WHERE ID NOT IN (SELECT ID1 FROM Highschooler H1, Friend, Highschooler H2
+WHERE ID NOT IN (SELECT ID FROM Highschooler H1, Friend, Highschooler H2
 WHERE H1.ID=Friend.ID1 AND Friend.ID2=H2.ID AND H1.grade<>H2.grade) ORDER BY grade, name;
 SELECT * FROM X;
