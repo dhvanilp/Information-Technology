@@ -1,2 +1,2 @@
-# V Sem Lab Programs
-This repository contains the programs done in the lab as a part of the course during the V semester.
+# Information Technology
+This repository contains the assignements done as a part of the course during the pursuing of B.Tech degree.
