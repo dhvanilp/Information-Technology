@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image2"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="com.example.dhp.codefundo.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/spacing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_below="@+id/top"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Groups"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutforrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/spacing"
+        android:layout_weight="6"
+        android:background="#00ff6666"
+        android:orientation="vertical">
+
+
+        <ListView
+            android:id="@+id/simpleListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/separatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/layoutforrecyclerview"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/separatorlayout"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/your_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Your Account"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/createPersongroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary"
+            android:text="Create New Person Group"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</LinearLayout>

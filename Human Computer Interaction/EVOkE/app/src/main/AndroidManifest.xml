@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dhp.codefundo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PersonGroup" />
+        <activity android:name=".CreatePerson" />
+        <activity android:name=".CreateGroup" />
+        <activity android:name=".DeletePerson" />
+        <activity android:name=".MarkAttendence" />
+        <activity android:name=".UserAccount" />
+        <activity android:name=".BatchEntry$WelcomeActivity" />
+        <activity android:name=".TotalGroupAttendence" />
+        <activity android:name=".PersonSpecificDayAttendence" />
+        <activity android:name=".SpecificPersonTA" />
+        <activity android:name=".SpecificDayGroupAttendence" />
+        <activity android:name=".EmailActivity"/>
+        <activity android:name=".AboutActivity"/>
+    </application>
+
+</manifest>

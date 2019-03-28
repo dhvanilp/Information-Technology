@@ -1,0 +1,1 @@
+Confidence(A -> B) = Support_count(A ∪ B) / Support_count(A)
